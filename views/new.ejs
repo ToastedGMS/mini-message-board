@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Message</title>
+</head>
+<body style="background-color: aqua;">
+    <form action="/new" method="post">
+        <h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"> <%= title %></h1>
+        <label for="author" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Author</label> <br><input id="author" name="author" type="text" style=" border-radius:15px;">
+        <br>
+        <label for="message" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; width: 40px; height: 480px;">Message</label> <br><textarea style="border-radius:15px; width: 480px; height: 100px;" id="message" name="message" type="text"></textarea>
+        <br>
+        <button style="border: 2px solid black; border-radius: 15px; background-color: white; height: 30px; width: 80px; font-weight: 900; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" type="submit">Send</button>
+    </form>
+</body>
+</html>

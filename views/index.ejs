@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+</head>
+<body style="background-color: aqua;">
+    <h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"><%= title %></h1>
+
+    <% messages.forEach((message) => { %>
+    <div style="width: fit-content; margin-bottom: 15px; border: 2px, solid black; border-radius:15px; background-color: white; padding: 5px;">
+     <h3 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Message from: <%= message.user%></h3>
+     <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; margin-bottom: 1px;"><%= message.text%></p>
+     <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: .8rem;margin-top: 3px;"><%= message.added%></p>
+    </div>
+     <% }) %>
+
+    <a style="border: 2px solid black; border-radius: 15px; background-color: white; height: 30px; width: 80px; font-weight: 900;margin-top: 5px; padding: 5px; color: black; text-decoration: none; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" href="/new">New Message</a>
+</body>
+</html>
